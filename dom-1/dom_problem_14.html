@@ -83,6 +83,14 @@
 
   <script>
     // Write your JavaScript code here
+    const container = document.querySelector('#container');
+    if (container !== null) {
+      const newDiv = document.createElement('div');
+      newDiv.id = "card";
+      newDiv.className = "product-card";
+      newDiv.textContent = "Product Name";
+      container.appendChild(newDiv);
+    }
 
   </script>
 </body>

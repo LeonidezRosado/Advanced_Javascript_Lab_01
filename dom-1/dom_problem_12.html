@@ -86,6 +86,14 @@
 
   <script>
     // Write your JavaScript code here
+    const contentSection = document.querySelector('#content');
+    if (contentSection !== null) {
+      const paragraphs = contentSection.querySelectorAll('p');
+      paragraphs.forEach(paragraph => {
+        paragraph.style.color = 'purple';
+      });
+    }
+    
 
   </script>
 </body>
