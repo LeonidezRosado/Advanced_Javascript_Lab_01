@@ -89,6 +89,23 @@
   <script>
     // Write your JavaScript code here
 
+    //use loop to create 5 div elements
+    //first get the boxContainer element
+    const boxContainer = document.getElementById('boxContainer');
+
+    //now use a for loop to create 5 boxes
+    for (let i = 1; i <= 5; i++) {
+      //create a div element
+      const box = document.createElement('div');
+      //set the class to 'box'
+      box.className = 'box';
+      //set the text content to 'Box [number]'
+      box.textContent = 'Box ' + i;
+      //append the box to the boxContainer
+      boxContainer.appendChild(box);
+    }
+
+
   </script>
 </body>
 </html>

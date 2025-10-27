@@ -88,6 +88,26 @@
   <script>
     // Write your JavaScript code here
 
+    //create div class "card"
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'card';
+
+    //create h3 with text "Title"
+    const TitleH3 = document.createElement('h3');
+    TitleH3.textContent = 'Title';
+
+    //create paragraph with text "Description"
+    const paragraph1 = document.createElement('p');
+    paragraph1.textContent = 'Description';
+
+    //Now append h3 and p to the card div
+    cardDiv.appendChild(TitleH3);
+    cardDiv.appendChild(paragraph1);
+
+    //Now append card dive to the element with the Id "cards"
+    const cardsContainer = document.getElementById('cards');
+    cardsContainer.appendChild(cardDiv);
+
   </script>
 </body>
 </html>

@@ -82,6 +82,21 @@
 
   <script>
     // Write your JavaScript code here
+    //craete the image element 
+    const img = document.createElement('img');
+
+    // set the source attribute to the image URL
+    img.src = 'https://via.placeholder.com/150';
+
+    //set an alt text placeholder of "Placeholder"
+    img.alt="Placeholder";
+    
+    //set the images width to 150
+    img.width = 150;
+
+    //append the image to the div with Id "gallery"
+    const galleryDiv = document.getElementById('gallery');
+    galleryDiv.appendChild(img);
 
   </script>
 </body>

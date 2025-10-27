@@ -79,6 +79,24 @@
   <script>
     // Write your JavaScript code here
 
+    //create the button element 
+    const button = document.createElement('button');
+
+    //set the button text
+    button.textContent = 'Click Me!';
+
+    //set the button id 
+    button.id = 'myButton';
+
+    //set the button inline styles
+    button.style.backgroundColor = 'blue';
+    button.style.color = 'white';
+    button.style.padding = '10px 20px';
+
+    //append the button to the div with the id btnContainer
+    const btnContainer = document.getElementById('btnContainer');
+    btnContainer.appendChild(button);
+
   </script>
 </body>
 </html>

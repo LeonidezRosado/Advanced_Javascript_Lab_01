@@ -87,6 +87,28 @@
 
   <script>
     // Write your JavaScript code here
+    
+    //create table row element 
+    const row = document.createElement('tr');
+
+    //create first table cell "Name"
+    const nameCell = document.createElement('td');
+    nameCell.textContent = 'Name';
+    row.appendChild(nameCell);
+
+    //create second table cell "age"
+    const agecell = document.createElement('td');
+    agecell.textContent = 'Age';
+    row.appendChild(agecell);
+
+    //create third table cell "city"
+    const citycell = document.createElement('td');
+    citycell.textContent = 'City';
+    row.appendChild(citycell);
+
+    //append the row to the tbody with Id "tableBody"
+    const tableBody = document.getElementById('tableBody');
+    tableBody.appendChild(row);
 
   </script>
 </body>
