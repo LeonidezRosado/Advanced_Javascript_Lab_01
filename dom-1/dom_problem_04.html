@@ -80,10 +80,17 @@
 
   <script>
     // Write your JavaScript code here
+
+    //create the secondelement const and get the element
     const secondElement = document.querySelector('#second');
+
+    //check for the element if it is a null
     if (secondElement !== null) {
+      //get the first element sibling and save it into this const thirdElement
       const thirdElement = secondElement.nextElementSibling;
+      //jcheck if its a null
       if (thirdElement !== null) {
+        //if its not set the text to the third element
         thirdElement.textContent = "I'm the third item!";
         console.log(" Third element text updated successfully.");
       } else {

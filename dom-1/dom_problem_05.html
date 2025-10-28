@@ -79,10 +79,16 @@
 
   <script>
     // Write your JavaScript code here
+    
+    //create middleelement and get the element with class "middle"
     const middleElement = document.querySelector('.middle');
+    //check if its not null
     if (middleElement !== null) {
+      //if its not null then also create a new const and get the previous sibling element of the first element
       const previousElement = middleElement.previousElementSibling;
+      //check if the previous element is not null
       if (previousElement !== null) {
+        //if its not null then change the border of that element to solid red 3px
         previousElement.style.border = "3px solid red";
         console.log(" Border added to the previous sibling successfully.");
       } else {

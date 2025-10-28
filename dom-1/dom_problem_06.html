@@ -80,16 +80,24 @@
 
   <script>
     // Write your JavaScript code here
+    //create const get the element with id (#target)
     const targetElement = document.querySelector('#target');
+    //check if its not null
     if (targetElement !== null) {
+      //if it is not null then get the previous element's sibling and save to new const
       const previousElement = targetElement.previousElementSibling;
+      //and then also get the element's next sibling
       const nextElement = targetElement.nextElementSibling;
+      //if the previous element is not null then 
       if (previousElement !== null) {
+        //change the color to blue
         previousElement.style.color = "blue";
       } else {
         console.log(" No previous sibling found for the target element.");
       }
+      //check if the next element isn't null
       if (nextElement !== null) {
+        //if its not then change the color to green
         nextElement.style.color = "green";
       } else {
         console.log(" No next sibling found for the target element.");

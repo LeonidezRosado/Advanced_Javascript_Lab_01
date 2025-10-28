@@ -86,10 +86,15 @@
 
   <script>
     // Write your JavaScript code here
+    //create a list const and get the id "#mylist"
     const myList = document.querySelector('#myList');
+    //check it isnt't null
     if (myList !== null) {
+      //get the first child element and save in const
       const firstItem = myList.firstElementChild;
+      //check if its not null
       if (firstItem !== null) {
+        //if it isn't null then set some text for that element
         firstItem.textContent = "First Item (Modified)";
         console.log(" First item text updated successfully.");
       } else {

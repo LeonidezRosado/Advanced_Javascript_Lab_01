@@ -89,9 +89,14 @@
 
   <script>
     // Write your JavaScript code here
+
+    //create const and select all the elements that are lists (li) and add the  class "list-itme" to each one
     const listItems = document.querySelectorAll('li');
+    //check if its null 
     if (listItems != null) {
+      //if not null, then loop each
       listItems.forEach(item => {
+        //here at the class title "list-item" to it
       item.classList.add('list-item');
     });
   } else {

@@ -82,10 +82,15 @@
 
   <script>
     // Write your JavaScript code here
+    //create const and get the span with id "#deep"
     const deepElement = document.querySelector('#deep');
+    //check if its not null
     if (deepElement !== null) {
+      //if its not null then get the element of the closest ancestor of it
       const closestContainer = deepElement.closest('.container');
+      // check if its not  null 
       if (closestContainer !== null) {
+        //if it isn't null then change the background color to lightblue
         closestContainer.style.backgroundColor = 'lightblue';
         console.log(" Background color of the closest container changed successfully.");
       } else {

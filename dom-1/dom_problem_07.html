@@ -86,10 +86,17 @@
 
   <script>
     // Write your JavaScript code here
+
+    //creat const and get the button with id "#myBtn"
     const myButton = document.querySelector('#myBtn');
+
+    //check if its not null
     if (myButton !== null) {
+      //if it isn't null then get the parent element of the button
       const parentElement = myButton.parentElement;
+      //check if its not null 
       if (parentElement !== null) {
+        //if it isn't null then add "btn-container" class to the parent element 
         parentElement.classList.add('btn-container');
         console.log(" Class 'btn-container' added to the parent successfully.");
       } else {

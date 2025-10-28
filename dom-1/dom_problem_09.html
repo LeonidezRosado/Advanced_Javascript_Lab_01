@@ -80,10 +80,16 @@
 
   <script>
     // Write your JavaScript code here
+
+    //create the const and get the element with id "#child"
     const childElement = document.querySelector('#child');
+    //check if its not null
     if (childElement !== null) {
+      //create a const and get the second parent element
       const grandParentElement = childElement.parentElement.parentElement;
+      //check if its not null
       if (grandParentElement !== null) {
+        //if its not null then set the border to 2px sold orange 
         grandParentElement.style.border = "2px solid orange";
         console.log(" Border added to the grandparent successfully.");
       } else {

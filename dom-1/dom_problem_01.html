@@ -78,13 +78,17 @@
 
   <script>
     // Write your JavaScript code here
+
+    //creating mainTitle element by selecting id main-title
       const mainTitle = document.querySelector('#main-title');
 
   //Checking for null
   if (mainTitle !== null) {
+    //so if its not null we can change the text content
     mainTitle.textContent = "DOM Selection Master";
     console.log(" Title updated successfully.");
   } else {
+    //if empty warn the user
     console.warn(" No element found with id='main-title'.");
   }
   </script>
